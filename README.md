@@ -160,6 +160,29 @@ git stash pop
 4. Set required permissions (read/write repository access)
 5. Use the token instead of a password during git push/pull
 
+### How to use fine grane token
+```bash
+# clone your repo
+git clone <your-fine-grane-token>@<youre-repo-id>
+
+# for example
+git clone https://github_pat_11BJQ5VUQ0zYt84o8vdJRZ_C2lgUKcHDMmxj8U2ImT4UAoEy1DjC2F5HhDnMG@github.com/mok/dummyrepo.git
+
+# then save your changes
+git add .
+
+# commit your change
+git commit -m 'your remark'
+
+# push your changes
+git push <your-fine-grane-token>@<youre-repo-id>
+
+# for example
+git push https://github_pat_11BJQ5VUQ0zYt84o8vdJRZ_C2lgUKcHDMm1DjC2F5HhDnMG@github.com/mok/dummyrepo.git
+
+```
+
+
 ## Best Practices
 - Always pull before you push
 - Write clear, descriptive commit messages
