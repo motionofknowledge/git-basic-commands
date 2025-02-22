@@ -182,6 +182,35 @@ git push https://github_pat_11BJQ5VUQ0zYt84o8vdJRZ_C2lgUKcHDMm1DjC2F5HhDnMG@gith
 
 ```
 
+## For Private Repo
+
+For private repositories, you'll need to authenticate properly. Here are the steps:
+First, generate a Personal Access Token (PAT) from GitHub:
+Go to GitHub.com → Settings → Developer Settings → Personal Access Tokens → Tokens (classic)
+Generate new token (classic)
+Give it a name and select the necessary scopes (at minimum: repo)
+Copy the generated token
+Then use these commands, replacing YOUR_USERNAME and YOUR_TOKEN:
+```bash
+
+# Remove existing remote if any
+git remote remove origin
+
+# Add remote with authentication
+git remote add origin https://YOUR_USERNAME:YOUR_TOKEN@github.com/motionofknowledge/04011998.git
+
+# Add and commit your files
+git add .
+git commit -m "Initial commit: Love Story Gallery with mobile and desktop views"
+
+# Push to main branch
+git branch -M main
+git push -u origin main
+
+
+```
+
+
 
 ## Best Practices
 - Always pull before you push
