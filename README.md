@@ -43,6 +43,11 @@ git remote -v
 # Add a new remote repository
 git remote add origin https://github.com/username/repository.git
 
+# Pull code from repository
+git pull origin 'branch-name'
+
+git pull origin ravi
+
 # Remove an existing remote repository
 git remote remove origin
 ```
