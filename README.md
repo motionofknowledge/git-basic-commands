@@ -68,6 +68,19 @@ git push -u origin master --force
 # Create and switch to a new branch
 git checkout -b feature-login
 
+# Push code to newly created branch
+git add .
+git commit -m "Your commit message"
+git push origin 'your-branch-name'
+
+# Verify That the Branch Is Pushed
+git branch -r
+or
+git ls-remote --heads origin
+
+# If you want to track this branch in future commits, set it as upstream
+git push --set-upstream origin 'your-branch-name'
+
 # Switch to an existing branch
 git checkout develop
 
