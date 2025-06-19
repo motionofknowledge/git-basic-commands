@@ -221,6 +221,10 @@ git remote add origin https://YOUR_USERNAME:YOUR_TOKEN@github.com/motionofknowle
 git add .
 git commit -m "Initial commit: Love Story Gallery with mobile and desktop views"
 
+# Befor pushing check .gitignore file and make sure to not push node_module file and other importent file like .env etc.
+git rm -r --cached <YOUR FOLDER NAME OR FILE NAME WITH EXTENSION>
+git commit -m "Remove native files from tracking as per .gitignore"
+
 # Push to main branch
 git branch -M main
 git push -u origin main
