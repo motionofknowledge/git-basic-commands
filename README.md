@@ -225,6 +225,10 @@ git commit -m "Initial commit: Love Story Gallery with mobile and desktop views"
 git branch -M main
 git push -u origin main
 
+# Push to main branch forcefully
+git push -u origin main --force
+git push -f
+
 
 ```
 
