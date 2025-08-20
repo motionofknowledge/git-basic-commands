@@ -237,6 +237,13 @@ git push -u origin main
 git push -u origin main --force
 git push -f
 
+# --- Fetch & Pull Changes (when repo updated on GitHub) ---
+# Fetch latest changes (does not merge)
+git fetch origin
+
+# Pull latest changes into your branch (fetch + merge)
+git pull origin main
+
 
 ```
 
