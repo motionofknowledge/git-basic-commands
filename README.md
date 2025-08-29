@@ -31,6 +31,29 @@ git config --global user.email 'johndoe@example.com'
 
 # Verify configurations
 git config --global --list
+
+```
+
+## Branch
+```bash
+# List local branches
+git branch
+
+# List remote branches
+git branch -r
+
+# List both local and remote branches
+git branch -a
+
+# Show branches with last commit info
+git branch -vv
+
+# Switch to an existing branch
+git checkout develop
+
+# Switch back to main branch
+git checkout main
+
 ```
 
 ## Remote Repositories Management
